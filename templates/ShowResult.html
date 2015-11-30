@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL shortener</title>
+</head>
+<body>
+    {% if not short_url %}
+        <font color=red size=+2><b>Invalid url</b></font> <br/>
+        <a href="{{home_page}}"> Go to home page</a>
+    {% else %}
+        Short URL is:<a href="{{short_url}}"> {{short_url}}</a>
+        <br/>
+
+    {% endif %}
+</body>
+</html>
