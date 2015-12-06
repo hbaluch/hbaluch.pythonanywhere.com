@@ -27,6 +27,9 @@ class Base62Coder:
         index   = 0
         result = 0
         while index < length:
-            result = 62 * result + self.__base62_dictionary.find(number[index])
+            temp = self.__base62_dictionary.find(number[index])
+            if temp == -1:
+                return -1
+            result = 62 * result + temp
             index += 1
         return result
