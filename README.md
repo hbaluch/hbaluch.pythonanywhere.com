@@ -1,5 +1,6 @@
 # hbaluch.pythonanywhere.com
-url_shortener
+
+```
 Requirements:
 Python with support for Flask and Sqlite3.
 Simply install Python 3.5.1
@@ -28,3 +29,4 @@ $ flask/bin/pip install flask
 
 To run the application one can simply run command "$ flask\Scripts\python main.py"
 To run the test suite one can simply run command "$ flask\Scripts\python test_suite.py"
+```
